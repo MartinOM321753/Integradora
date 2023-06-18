@@ -1,0 +1,33 @@
+.cent {
+    margin-left: 40%;
+    margin-top: -150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+
+}
+.titulo{
+
+    margin: 8% 0px;
+}
+
+.cent input {
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+
+
+.btn {
+
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+    margin-left: 60px;
+    font-size: 20px;
+background-color: #C9BF86;
+cursor: pointer;
+
+}

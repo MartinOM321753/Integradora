@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paquetes-Photo Party</title>
+    <link rel="stylesheet" href="CSS/style.CSS">
+
+</head>
+
+<body>
+  
+    <header class="header">
+        <a href="Index.html"> <img src="Img/Logo.jpg" id="log" class="img-fluid"></a>
+        <div class="conteiner logo-nav-conteiner">
+            <a href="Index.html" class="logo">PHOTO PARTY</a>
+            <span class="menu-icon">Ver menu</span>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="empleado.html">Empleado</a></li>
+
+
+
+                    <a href="https://www.instagram.com/cabinasphotopartycuernavaca/" target="_blank"><img
+                            src="Img/redes/instagram.png"></a>
+                    <a href="https://www.facebook.com/lasmejorescabinasdemorelos/" target="_blank"><img
+                            src="Img/redes/facebook.png"></a>
+                    <a href="mailto:photopartycuernavaca@gmail.com?subject=Asunto del correo&body=Cuerpo del correo"
+                        target="_blank"><img src="Img/redes/gmail.png"></a>
+                    <a href="https://wa.me/7775501299" target="_blank"><img src="Img/redes/whatsapp.png"></a>
+
+                    <ul>
+
+
+            </nav>
+        </div>
+    </header>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<!--script del boton menu responsive No tocar  -->
+<script>
+    // Tu código jQuery va aquí
+    $(document).ready(function () {
+
+        var menuBtn = $('.menu-icon'),
+            menu = $('.navigation ul');
+
+        menuBtn.click(function () {
+
+            if (menu.hasClass('show')) {
+
+                menu.removeClass('show');
+
+            } else {
+                menu.addClass('show');
+            }
+
+        });
+
+    });
+</script>
+</html>

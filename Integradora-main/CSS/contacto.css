@@ -1,0 +1,317 @@
+/* CLASE CONTENEDOR DE TODA LA WEB*/
+.conteiner {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+/* ENCABEZADO */
+
+.header {
+    background-color: #89969F;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 60;
+
+}
+
+.header a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2rem 0;
+
+
+}
+
+/*NOMBRE DE LA WEB */
+
+.logo-nav-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+/*LOGO */
+
+#log {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+    position: absolute;
+    transform: translateY(-0%);
+    z-index: 60;
+    position: absolute;
+    box-shadow: 1px 5px 8px #00000080;
+
+}
+
+@media only screen and (max-width: 1428px) {
+    #log {
+        margin-top: 40px;
+        margin-left: 5px;
+        width: 180px;
+        height: auto;
+        border-radius: 100px;
+        position: absolute;
+        transform: translateY(15%);
+        z-index: 60;
+
+    }
+
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.4rem;
+
+}
+
+/*BARRA DE NAVEGACION */
+
+.navigation img {
+
+    width: 30px;
+    height: 30px;
+    margin-left: 1rem;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.navigation img:hover {
+
+    opacity: 0.5;
+    transform: scale(1.2);
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+/* BOTON MENU RESPONSIVE*/
+
+.menu-icon {
+    display: none;
+    color: aliceblue;
+}
+
+/*BARRA DE NAVEGACION */
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+
+}
+
+.navigation a {
+    font-size: 20px;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+
+
+}
+
+.navigation ul li a:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* FIN PARA LA BARRA DE NAVEGACION */
+
+/*BARRA DE NAVEGACION PARTE RESPONSIVE  */
+/*     !NO TOCAAAAAAAAAAAAR ¡*/
+
+
+@media only screen and (max-width: 1050px) {
+
+    /*
+        .navigation ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;*/
+    #log {
+        left: 100%;
+        width: 0%;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 0px;
+
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    }
+
+    .navigation ul li {
+        display: block;
+
+    }
+
+    .navigation ul li a {
+        display: block;
+
+    }
+
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 6cm;
+
+    }
+
+    .navigation ul li a:hover {
+        background: #cbc1c1;
+    }
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+/*fin de barra de navegacion responsive*/
+
+
+
+.cent {
+    margin-top: 30%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+
+}
+
+.cent hr {
+
+    width: 300px;
+
+}
+
+.a_img {
+
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+
+}
+
+.cent a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact_img {
+
+    margin: 1% -22%;
+    width: 90%;
+    padding-bottom: 20px;
+    object-fit: cover;
+
+
+}
+
+@media only screen and (max-width: 762px) {
+
+    .cent {
+        margin-top: 1%;
+        width: 80%;
+        
+
+    }
+
+    .contact_img img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+
+    }
+
+    .correo a {
+
+        font-size: 25px;
+        text-align: center;
+    }
+   
+
+    @media only screen and (max-width: 401px) {
+           .cent{
+                margin-top: 1%;
+           }
+        .correo a {
+
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 355px) {
+    
+   .cent{
+        margin-top: 1%;
+   }
+   .cent p{
+    font-size: 27px;
+   }
+   .cent a{
+    font-size: 25px;
+   }
+   img.a_img{
+    width: 13%;
+    
+   }
+   .contact_img {
+    width: 100%;
+    padding-bottom: 20px;
+   
+}
+.correo a{
+
+    font-size: 20px;
+   
+}
+
+}
